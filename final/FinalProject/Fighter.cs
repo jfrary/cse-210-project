@@ -17,21 +17,22 @@ public override void DisplayCharacter()
     {
         Console.WriteLine($"Name: {_name},Health: {_hp},Armor Class: {_armorClass}, Inventory: {_inventory}");
     }
-public override int Attack()
-    {
-        int dmg = RollDice();
+// public override int Attack()
+//     {
+//         int dmg = DiceRoller.Roll(2, 6);
 
-        return dmg;
-    }
-public  override bool IsDead(int hp)
+//         return dmg;
+//     }
+public  override bool IsDead()
     {
-        if (hp <= 0 )
-        {
-            return true;
-            }
-        else
-        {
-            return false;
-        }
+        return _hp <= 0;
+        // if (hp <= 0 )
+        // {
+        //     return true;
+        //     }
+        // else
+        // {
+        //     return false;
+        // }
     }     
 }

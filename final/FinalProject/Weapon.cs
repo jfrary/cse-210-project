@@ -6,7 +6,7 @@ public class Weapon : Item
 private int _range;
 private int _damage;
 
-public Weapon(string name, float weight, int value, int range, int damage) : base(name, weight, value)
+public Weapon(string name, int weight, int value, int range, int damage) : base(name, weight, value)
     {
         _range = range;
         _damage = damage;

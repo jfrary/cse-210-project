@@ -1,10 +1,11 @@
 using System;
-using Microsoft.VisualBasic;
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
+        List<Character> characters = new List<Character>();
         bool open = true;
         while (open)
         {
@@ -23,11 +24,14 @@ class Program
             {
 
                 case "1":
-                    CreateCharacter.CreateCharacter(characters);
+                    CreateCharacter.CreateNewCharacter(characters);
                     break;
                 
                 case "2":
-                    DisplayCharacter(characters);
+                    foreach (Character character in characters) 
+                    {
+                        character.DisplayCharacter();
+                    }
                     break;
          
     }

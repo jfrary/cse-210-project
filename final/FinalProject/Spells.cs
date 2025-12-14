@@ -1,6 +1,6 @@
 using System;
 
-class Spells
+public abstract class Spells
 {
     private string _name;
     private int _damage;

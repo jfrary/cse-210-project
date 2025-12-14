@@ -1,26 +1,26 @@
 using System;
 
-public class Item
+public abstract class Potion : Item
 {
     
 private int _heal;
 
 
-public Item(string name, int heal, float weight, int value) : base(name, weight, value)
+public Potion(string name, int heal, int weight, int value) : base(name, weight, value)
     {
         _heal = heal;
     }
 
 
-public string ItemName()
+public override string ItemName()
     {
         return _name;
     }
-public string ItemWeight()
+public override int ItemWeight()
     {
         return _weight;
     }
-public string ItemValue()
+public override int ItemValue()
     {
         return _value;
 
@@ -28,7 +28,7 @@ public string ItemValue()
 
 public override void DisplayStats()
     {
-        Console.WriteLine($"{_name}, {_heal}, {_weight}, {_value}");
+        Console.WriteLine($"{ItemName}, {_heal}, {ItemWeight}, {ItemValue}");
     }
 }
 

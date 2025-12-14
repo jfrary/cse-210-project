@@ -15,7 +15,7 @@ class DiceRollers
         _characterModifier = Modifier;
     }
 
-    public int Rolldice()
+    public int RollDice()
     {
         int total = 0;
         

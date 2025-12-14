@@ -3,10 +3,10 @@ using System;
 public class Armor : Item
 {
     
-private string _armorClass;
+private int _armorClass;
 
 
-public Armor(string name, int armorClass, float weight, int value) : base(name, weight, value)
+public Armor(string name, int armorClass, int weight, int value) : base(name, weight, value)
     {
         _armorClass = armorClass;
     }

@@ -1,9 +1,6 @@
 using System;
 
-class Program
+class AbilityScores
 {
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello FinalProject World!");
-    }
+
 }

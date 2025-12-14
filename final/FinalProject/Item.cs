@@ -1,13 +1,13 @@
 using System;
 
-public class Item
+public abstract class Item
 {
     
-private string _name;
-private float _weight;
-private int _value;
+protected string _name;
+protected int _weight;
+protected int _value;
 
-public Item(string name, float weight, int value)
+public Item(string name, int weight, int value)
     {
         _name = name;
         _weight = weight;
@@ -16,9 +16,9 @@ public Item(string name, float weight, int value)
 
 public abstract string ItemName();
 
-public abstract string ItemWeight();
+public abstract int ItemWeight();
 
-public abstract string ItemValue();
+public abstract int ItemValue();
 
 public abstract void DisplayStats();
 

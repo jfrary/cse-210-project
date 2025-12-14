@@ -1,9 +1,9 @@
 using System;
-using System.Reflection.PortableExecutable;
 
-class CreatCharacter
+
+class CreateCharacter
 {
-    public static void CreateCharacter(List<Characteristics> characters)
+    public static void CreateNewCharacter(List<Character> characters)
     {
               string type;
                          while (true)
@@ -32,7 +32,8 @@ class CreatCharacter
                 string name = Console.ReadLine();
                 int hp = 25;
                 int armorClass = 15;
-                Fighter figher = new Fighter(name, hp, inventory, armorClass);
+                int inventory = 5;
+                Fighter fighter = new Fighter(name, hp, inventory, armorClass);
                 characters.Add(fighter);
 
                 Console.WriteLine("Your character is created!");

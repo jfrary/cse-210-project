@@ -1,6 +1,6 @@
 using System;
 
-class CombatAction
+public abstract class CombatAction
 {
 
 public abstract int AttackThem();

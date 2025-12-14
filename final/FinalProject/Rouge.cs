@@ -6,9 +6,9 @@ private int _sneakAttack;
 private bool _isStealthed;
 
 
-public Rouge(int SneakAttack, bool IsStealthed) : base(name, hp, inventory)
+public Rouge(string name, int hp, int inventory, int SneakAttack, bool IsStealthed) : base(name, hp, inventory)
     {
-      _sneakAttack = Rolldice * 2;
+    //   _sneakAttack = DiceRollers.RollDice() * 2;
       _isStealthed = IsStealthed;
     }
 
@@ -16,26 +16,27 @@ public bool IsStealthed()
     {
         return _isStealthed;
     }
-public override void Attack()
+// public override int Attack()
+//     {
+//         int dmg = DiceRoller.Roll(3, 6);
+//         if (_isStealthed)
+//         {
+//             dmg += _sneakAttack;
+//             _isStealthed = false;
+//         }
+//         return dmg;
+    
+public  override bool IsDead()
     {
-        int dmg = RollDice();
-        if (_isStealthed)
-        {
-            dmg += _sneakAttack;
-            _isStealthed = false;
-        }
-        return dmg;
-    }
-public  override bool IsDead(int hp)
-    {
-        if (hp <= 0 )
-        {
-            return true;
-            }
-        else
-        {
-            return false;
-        }
+        return _hp <= 0;
+        // if (hp <= 0 )
+        // {
+        //     return true;
+        //     }
+        // else
+        // {
+        //     return false;
+        // }
     }   
 
 public override void DisplayCharacter()
