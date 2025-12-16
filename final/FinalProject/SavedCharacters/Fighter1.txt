@@ -1,0 +1,1 @@
+Fighter,test,25,5,15

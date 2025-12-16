@@ -18,6 +18,13 @@ public int SpellSlots()
     {
         return _spellSlots;
     }
+
+public void UseSpellSlot(int amount)
+    {
+        _spellSlots -= amount;
+        if (_spellSlots < 0)
+            _spellSlots = 0;
+    }
 public string knownSpells()
     {
         return _knownSpells;

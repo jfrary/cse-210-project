@@ -1,0 +1,1 @@
+Wizard,CSE210,25,5,3,Fireball

@@ -2,11 +2,11 @@ using System;
 
 public class Rouge : Character
 {
-private int _sneakAttack;
+// private int _sneakAttack;
 private bool _isStealthed;
 
 
-public Rouge(string name, int hp, int inventory, int SneakAttack, bool IsStealthed) : base(name, hp, inventory)
+public Rouge(string name, int hp, int inventory,  bool IsStealthed) : base(name, hp, inventory)
     {
     //   _sneakAttack = DiceRollers.RollDice() * 2;
       _isStealthed = IsStealthed;
